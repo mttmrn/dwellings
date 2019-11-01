@@ -1,0 +1,15 @@
+.app {
+  background: #096079;
+  height: 100vh;
+}
+
+.header-container {
+  height: 20rem;
+}
+
+.sun {
+  background: #FCFF67;
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50rem;
+}
