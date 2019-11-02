@@ -1,6 +1,8 @@
 .app {
   background: #096079;
   height: 100vh;
+  overflow-x: hidden;
+  z-index: -2;
 }
 
 .header-container {
@@ -9,7 +11,111 @@
 
 .sun {
   background: #FCFF67;
-  width: 22rem;
-  height: 22rem;
+  width: 31rem;
+  height: 31rem;
   border-radius: 50rem;
+  margin-top: -14rem;
+}
+
+.cloud-large {
+  width: 30rem;
+}
+
+.cloud-med {
+  width: 25rem;
+}
+
+.cloud-small {
+  width: 20rem;
+}
+
+.left1 {
+  top: 6rem;
+  left: 25rem;
+}
+
+.left2 {
+  top: -6rem;
+  left: 8rem;
+}
+
+.left3 {
+  top: 13rem;
+  left: -6.5rem;
+}
+
+.right1 {
+  top: 1.5rem;
+  right: 22rem;
+}
+
+.right2 {
+  top: -6rem;
+  right: -10rem;
+}
+
+.right3 {
+  top: 11rem;
+  right: -2rem;
+}
+
+.container-left,
+.container-right {
+  width: 50%;
+}
+
+.container-left {
+  padding: 8rem;
+}
+
+.email-input::placeholder {
+  color: black;
+}
+
+.email-input {
+  width: 28rem;
+  height: 2rem;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 2rem;
+}
+
+.btn {
+  background: #C3C800;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  width: 24rem;
+  height: 4rem;
+}
+
+.btn-inside {
+  background: #FBFE83;
+  border-radius: 5px;
+  width: 100%;
+  height: 3.7rem;
+  top: 0;
+  left: 0;
+}
+
+.card {
+  width: 17rem;
+  height: 12rem;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 9px;
+}
+
+.signup-container {
+  margin-bottom: 5rem;
+}
+
+.home-img {
+  width: 100%;
+  filter: drop-shadow(0px 50px 4px rgba(0, 0, 0, 0.15));
+}
+
+.bezier {
+  bottom: 0;
+  z-index: -1;
 }
