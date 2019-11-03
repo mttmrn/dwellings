@@ -3,11 +3,13 @@ import './App.css';
 import Cloud from './img/cloud.svg'
 import Home from './img/home.svg'
 import Bezier from './img/bezier.svg'
+import { loadOptions } from '@babel/core';
 
 function App() {
+
   return (
     <div className="app relative">
-      <img src={Bezier} className="bezier absolute" alt="bezier background accent" />
+      <img src={Bezier} className="bezier absolute" alt="bezier" />
       <header className="header-container centered relative">
         <img src={Cloud} className="absolute cloud-large left1" alt="cloud" />
         <img src={Cloud} className="absolute cloud-med left2" alt="cloud" />
@@ -19,7 +21,7 @@ function App() {
           <span className="logo">dwellings</span>
         </div>
       </header>
-      <main className="flex">
+      <main className="flex relative">
         <div className="container-left">
           <h1 className="headline">Housing for Entrepreneurs</h1>
           <h2 className="subhead">Become roommates with brilliant people in luxury homes across the globe.</h2>
