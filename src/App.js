@@ -1,9 +1,7 @@
 import React from 'react';
 import './App.css';
-import Cloud from './img/cloud.svg'
-import Home from './img/home.svg'
-import Bezier from './img/bezier.svg'
-import { loadOptions } from '@babel/core';
+import { Image } from 'cloudinary-react';
+import Bezier from './img/bezier.svg';
 
 function App() {
 
@@ -11,12 +9,12 @@ function App() {
     <div className="app relative">
       <img src={Bezier} className="bezier absolute" alt="bezier" />
       <header className="header-container centered relative">
-        <img src={Cloud} className="absolute cloud-large left1" alt="cloud" />
-        <img src={Cloud} className="absolute cloud-med left2" alt="cloud" />
-        <img src={Cloud} className="absolute cloud-small left3" alt="cloud" />
-        <img src={Cloud} className="absolute cloud-small right3" alt="cloud" />
-        <img src={Cloud} className="absolute cloud-med right2" alt="cloud" />
-        <img src={Cloud} className="absolute cloud-large right1" alt="cloud" />
+        <Image cloudName="m2h" publicId="cloud.svg" className="absolute cloud-large left1" alt="cloud" />
+        <Image cloudName="m2h" publicId="cloud.svg" className="absolute cloud-med left2" alt="cloud" />
+        <Image cloudName="m2h" publicId="cloud.svg" className="absolute cloud-small left3" alt="cloud" />
+        <Image cloudName="m2h" publicId="cloud.svg" className="absolute cloud-small right3" alt="cloud" />
+        <Image cloudName="m2h" publicId="cloud.svg" className="absolute cloud-med right2" alt="cloud" />
+        <Image cloudName="m2h" publicId="cloud.svg" className="absolute cloud-large right1" alt="cloud" />
         <div className="sun centered">
           <span className="logo">dwellings</span>
         </div>
@@ -37,7 +35,7 @@ function App() {
           </div>
         </div>
         <div className="centered container-right">
-          <img className="home-img" src={Home} alt="home with people inside" />
+          <Image cloudName="m2h" publicId="home.svg" className="home-img" alt="home with people inside" />
         </div>
       </main>
 
