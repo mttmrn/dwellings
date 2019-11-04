@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="app relative">
-      <img src={Bezier} className="bezier absolute" alt="bezier" />
+      <Image cloudName="m2h" publicId="bezierBackgroundAccent.svg" className="bezier absolute" alt="background accent" />
       <header className="header-container centered relative">
         <Image cloudName="m2h" publicId="cloud.svg" className="absolute cloud-large left1" alt="cloud" />
         <Image cloudName="m2h" publicId="cloud.svg" className="absolute cloud-med left2" alt="cloud" />
