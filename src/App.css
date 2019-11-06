@@ -2,6 +2,7 @@
   height: 100vh;
   overflow: hidden;
   background: #096079;
+  min-width: 100%;
 }
 
 .header-container {
@@ -12,31 +13,34 @@
   background: #FCFF67;
   width: 31rem;
   height: 31rem;
-  border-radius: 50rem;
+  border-radius: 50%;
   margin-top: -14rem;
   animation: slideDown 2s 1;
 }
 
 .cloud-large {
-  width: 30rem;
+  width: 22%;
+  min-width: 20.5rem;
 }
 
 .cloud-med {
-  width: 25rem;
+  width: 17%;
+  min-width: 15rem;
 }
 
 .cloud-small {
-  width: 20rem;
+  width: 12.5%;
+  min-width: 12rem;
 }
 
 .left1 {
-  top: 6rem;
-  left: 25rem;
+  top: 30%;
+  left: 17%;
 }
 
 .left2 {
-  top: -7rem;
-  left: 8rem;
+  top: -33%;
+  left: 6%;
 }
 
 .left3 {
@@ -51,8 +55,8 @@
 }
 
 .right1 {
-  top: 0rem;
-  right: 22rem;
+  top: 0%;
+  right: 15%;
 }
 
 .right2 {
@@ -77,7 +81,7 @@
 }
 
 .container-left {
-  padding: 7.5rem;
+  padding: 5%;
   animation: fadeIn 2s 1 forwards;
 }
 
@@ -129,13 +133,141 @@
 
 .home-img {
   width: 100%;
+  min-width: 50rem;
   filter: drop-shadow(0px 35px 4px rgba(0, 0, 0, 0.25));
   animation: hover 4s infinite forwards ease-in-out, fadeIn 2s 1 forwards;
 }
 
 .bezier {
-  bottom: -4rem;
-  left: 0rem;
+  bottom: -2%;
+  left: 0%;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 1100px) {
+  .sun {
+    height: 25rem;
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .container-left {
+    width: 55%;
+  }
+
+  .container-right {
+    width: 45%;
+  }
+}
+
+
+
+@media screen and (max-width: 950px) {
+
+  .container-right {
+    display: none;
+  }
+
+  .container-left {
+    width: 100%;
+  }
+
+  .card {
+    height: 16rem;
+  }
+
+  .headline {
+    font-size: calc(2.5rem + 1.2vw);
+  }
+
+  .description-text {
+    font-size: calc(1.4rem + 0.25vw);
+  }
+
+  main {
+    margin-top: 2rem;
+  }
+
+  .left1 {
+    top: 25%;
+    left: 14vw;
+  }
+
+  .left2 {
+    top: -25%;
+    left: 6%;
+  }
+
+  .left3 {
+    top: 40%;
+    left: -5%;
+  }
+
+  .right1 {
+    top: 6%;
+    right: 12%;
+  }
+
+  .right2 {
+    top: -20%;
+    right: -10%;
+  }
+
+  .right3 {
+    top: 43%;
+    right: -2%;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  .left1 {
+    top: 25%;
+    left: 14vw;
+  }
+
+  .left2 {
+    top: -25%;
+    left: 6%;
+  }
+
+  .left3 {
+    top: 40%;
+    left: -5%;
+  }
+
+  .right1 {
+    top: 6%;
+    right: 12%;
+  }
+
+  .right2 {
+    top: -20%;
+    right: -10%;
+  }
+
+  .right3 {
+    top: 43%;
+    right: -2%;
+  }
+
+  .app {
+    background: blue;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sun {
+    height: 17rem;
+    width: 17rem;
+  }
+
+  .app {
+    background: blueviolet;
+  }
 }
 
 @keyframes slideInLeft {
