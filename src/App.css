@@ -183,11 +183,11 @@
   }
 
   .description-text {
-    font-size: calc(1.4rem + 0.25vw);
+    font-size: calc(1.2rem + 0.25vw)
   }
 
   main {
-    margin-top: 2rem;
+    margin-top: -2.5rem;
   }
 
   .left1 {
@@ -226,7 +226,7 @@
 
   .left1 {
     top: 25%;
-    left: 14vw;
+    left: 5%;
   }
 
   .left2 {
@@ -235,38 +235,77 @@
   }
 
   .left3 {
-    top: 40%;
-    left: -5%;
+    top: 10%;
+    left: -15%;
   }
 
   .right1 {
     top: 6%;
-    right: 12%;
+    right: 4%;
   }
 
   .right2 {
     top: -20%;
-    right: -10%;
+    right: -12%;
   }
 
   .right3 {
     top: 43%;
-    right: -2%;
+    right: -14%;
   }
 
-  .app {
-    background: blue;
+}
+
+@media screen and (max-width: 640px) {
+
+  .left1 {
+    top: 30%;
+    left: -8%;
+  }
+
+  .left2 {
+    top: -20%;
+    left: 0%;
+  }
+
+  .left3 {
+    display: none
+  }
+
+  .right1 {
+    top: 30%;
+    right: -10%;
+  }
+
+  .right2 {
+    display: none;
+  }
+
+  .right3 {
+    top: -10%;
+    right: 0%;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .sun {
-    height: 17rem;
-    width: 17rem;
+@media screen and (max-width: 500px) {
+  .left1 {
+    top: 30%;
+    left: -20%;
   }
 
-  .app {
-    background: blueviolet;
+  .left2 {
+    top: -18%;
+    left: -10%;
+  }
+
+  .right1 {
+    top: 30%;
+    right: -20%;
+  }
+
+  .right3 {
+    top: -10%;
+    right: -15%;
   }
 }
 
